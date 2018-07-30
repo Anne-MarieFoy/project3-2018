@@ -18,15 +18,16 @@
 <form method="post" action="processadd.php">
 <table>
 <tr>
-<td>Description: </td><td><textarea name="description" rows="8" cols="35"><?php echo $description;
-?></textarea></td>
+<td>Description: </td>
+<td><textarea name="description" rows="8" cols="35" required="required"/></textarea></td>
 </tr>
 <tr>
-<td>Hamper Type: </td><td><textarea name="hampertype" ><?php echo $hampertype; ?></textarea></td>
+<td>Hamper Type: </td>
+<td><textarea name="hampertype" ></textarea></td>
 </tr>
 <tr>
-<td>Category ID: </td><td><input type="number" name="categoryid" value="<?php echo
-$categoryid; ?>" /></td>
+<td>Category ID: </td>
+<td><input type="number" name="categoryid" required="required"/></td>
 </tr>
 <td>Image Path:</td>
 <td><input type="text" name="image" required="required"/></td>

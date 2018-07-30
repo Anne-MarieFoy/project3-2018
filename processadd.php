@@ -19,7 +19,6 @@ $password="";
 $link=mysqli_connect($server,$dbuser,$password);
 mysqli_select_db($link, "christmasdraw");
 
-$hamperid=$_POST["hamperid"];
 $description=$_POST["description"];
 $hampertype=$_POST["hampertype"];
 $categoryid=$_POST["categoryid"];
@@ -29,7 +28,7 @@ $sql_insert="INSERT INTO hamper(description, hampertype, categoryid, image)
 VALUES ('$description', '$hampertype', '$categoryid', '$image')";
 if(mysqli_query($link, $sql_insert)) {
 echo "<h3>Hamper Added!</h3>";
-echo "<a href='manageproperties.php'>Return to Manage Hampers page</a>";}
+echo "<a href='managehampers.php'>Return to Manage Hampers page</a>";}
 else{
        echo"An error occured, try again!";
 	   }
