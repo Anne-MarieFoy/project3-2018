@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Manage Hampers</title>
+  <title>Manage Items</title>
   <meta charset="utf-8">
  <link rel="stylesheet" href="css/style.css">
  </head>
@@ -12,7 +12,7 @@
 <div id="content">
 <h3>Manage Items</h3>
 
-<a href="addhamper.php">Add an Item</a>
+<a href="additem.php">Add an Item</a>
 <br>
 <br>
 <a href="admin.php">Return to admin page</a>

@@ -19,14 +19,14 @@ $password="";
 $link=mysqli_connect($server,$dbuser,$password);
 mysqli_select_db($link, "christmasdraw");
 
-$itemid=$_GET["itemid"];
+/*$itemid=$_GET["itemid"];*/
 
 $sql="SELECT * from item"; /*category WHERE item.categoryid=$categoryid AND category.categoryid=$categoryid";*/
 $output=mysqli_query($link, $sql);
 
 $getcategory=mysqli_fetch_array($output);
 echo "<h3>";
-echo $getitem["itemdescription"];
+/*echo $getitem["itemdescription"];*/
 echo "</h3>";
 
 $result=mysqli_query($link,$sql);
@@ -38,12 +38,13 @@ echo "<tr>
 			<td><strong>Description</td>
 			</tr>";
 while($row=mysqli_fetch_array($result)) {
-           $hamperid=$row["itemid"];
+           $itemid=$row["itemid"];
 		   $image=$row["image"];
 		   $itemdesc=$row["itemdescription"];	
 echo "<tr>
 			<td><img src='$image' width=250 height=200> </td>
 			<td>$itemdesc</td>
+			<td><a href='pledge.php'?itemid=$itemid'>Pledge</a></td>
 			</tr>";	
 }
 echo "</table>"	;
