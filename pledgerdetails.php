@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Contact Us</title>
+  <title>Pledger Details</title>
   <meta charset="utf-8">
  <link rel="stylesheet" href="css/style.css">
  </head>
@@ -10,7 +10,7 @@
 <?php include("includes/header.html");?>
 <?php include("includes/nav.html");?>
 <div id="content">
-<h2>Contact Details</h2>
+<h2>Pledger Details</h2>
 <img src="images/baubles.jpg" width="1175" height="550" >
 <table>
 <tr>
@@ -60,27 +60,31 @@ echo"<tr>
 mysqli_close($link);
 ?>
 <div id="addquestion">
-<h3>Ask a question</h3>
+<h3>Please fill in your details</h3>
 <p>
-<form method="post" action="processquestion.php">
+<form method="post" action="processdetails.php">
 <table>
 <tr>
-<td>Title: </td>
-<td><input type="text" name="title" required = "required" /></td>
+<td>First Name: </td>
+<td><input type="text" name="firstname" required = "required" /></td>
 </tr>
 <tr>
-<td>Question: </td>
-<td><textarea name="content" rows="8" cols="35" required = "required" ></textarea></td>
+<td>Last Name: </td>
+<td><input type="text" name="lastname" required = "required" /></td>
 </tr>
-<td>Your Name: </td>
-<td><input type="text" name="author_name" required = "required" /></td>
-</tr>
-<tr>
 <td>Email: </td>
-<td><input type="email" name="author_email" required = "required" /></td>
+<td><input type="email" name="email" required = "required" /></td>
 </tr>
 <tr>
-<td><input type="submit" name="submit" value="Add Question" /></td>
+<td>Phone Number: </td>
+<td><input type="phoneno" name="phoneno" required = "required" /></td>
+</tr>
+<tr>
+<td>Quantity: </td>
+<td><input type="text" name="quantity" required = "required" /></td>
+</tr>
+<tr>
+<td><input type="submit" name="submit" value="Add Details" /></td>
 </tr>
 </table>
 </form>

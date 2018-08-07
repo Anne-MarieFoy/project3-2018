@@ -19,14 +19,14 @@ $password="";
 $link=mysqli_connect($server,$dbuser,$password);
 mysqli_select_db($link, "christmasdraw");
 
-/*$itemid=$_GET["itemid"];*/
+/*$hamperid=$_GET["hamperid"];*/
 
-$sql="SELECT * from item"; /*category WHERE item.categoryid=$categoryid AND category.categoryid=$categoryid";*/
+$sql="SELECT * from item"; /*hamper WHERE item.hamperid=$hamperid AND hamper.hamperid=$hamperid";*/
 $output=mysqli_query($link, $sql);
 
 $getcategory=mysqli_fetch_array($output);
 echo "<h3>";
-/*echo $getitem["itemdescription"];*/
+/*echo $gethamper["hampertype"];*/
 echo "</h3>";
 
 $result=mysqli_query($link,$sql);
@@ -44,14 +44,14 @@ while($row=mysqli_fetch_array($result)) {
 echo "<tr>
 			<td><img src='$image' width=250 height=200> </td>
 			<td>$itemdesc</td>
-			<td><a href='pledge.php'?itemid=$itemid'>Pledge</a></td>
+			<td><a href='pledgerdetails.php'?itemid=$itemid'>Pledge</a></td>
 			</tr>";	
 }
 echo "</table>"	;
 }
 else
 {
-echo "<h3>There are currently no items in this category</h3>";
+echo "<h3>There are currently no items in this hamper</h3>";
 }
 mysqli_close($link);
 ?>			

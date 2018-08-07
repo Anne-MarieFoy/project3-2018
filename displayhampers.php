@@ -48,7 +48,7 @@ echo "<tr>
 			<td><img src='$image' width=250 height=200> </td>
 			<td>$hampertype</td>
 			<td>$hamperdesc</td>
-			<td><a href='items.php?hamperid=$hamperid'>Items</a></td>
+			<td><a href='displayitems.php?categoryid=$categoryid'>Items</a></td>
 			</tr>";	
 }
 echo "</table>"	;

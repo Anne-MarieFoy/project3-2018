@@ -21,9 +21,9 @@ $link=mysqli_connect($server,$dbuser,$password);
 
 mysqli_select_db($link, "christmasdraw");
 
-$categoryid=$_GET["categoryid"];
+$hamperid=$_GET["hamperid"];
 
-$sql= "SELECT * FROM item, category WHERE item.categoryid=$categoryid AND category.categoryid=$categoryid";
+$sql= "SELECT * FROM item, hamper WHERE item.hamperid=$hamperid AND hamper.hamperid=$hamperid";
 $result=mysqli_query($link,$sql);
 
 if(mysqli_num_rows($result)>0);
@@ -33,7 +33,7 @@ echo "<tr>
 			<td><strong>Description</td>
 			</tr>";
 while($row=mysqli_fetch_array($result)) {
-           $categoryid=$row["categoryid"];
+           $hamperid=$row["hamperid"];
 		   $Itemid=$row["Itemid"];
 		   $ItemDescription=$row["Description"];
 		   $image=$row["image"];
