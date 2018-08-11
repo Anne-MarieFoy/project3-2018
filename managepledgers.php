@@ -15,6 +15,7 @@
 <a href="addpledger.php">Add a Pledger</a>
 <br>
 <br>
+<a href="admin.php">Return to admin page</a>
 
 <div id="displaypledgers">
 <?php
