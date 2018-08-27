@@ -54,6 +54,11 @@ body{font-family: Helvetica, Arial, Verdana, Sans-serif;
 	
 #sitename{ float: left; width: 300px; padding-top: 20px;}
 #logo {float:left; width: 150px;}
+
+#script{ 
+	height: 100px;
+	text-align: center;
+}
 	
 table td {padding: 10px;}
 
