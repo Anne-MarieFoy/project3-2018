@@ -10,6 +10,7 @@
 <?php include("includes/header.html");?>
 <?php include("includes/nav.html");?>
 <div id="content">
+<h3>Manage Questions</h3>
 <?php
 $server="localhost";
 $dbuser="root";

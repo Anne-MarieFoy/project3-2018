@@ -37,7 +37,7 @@ $sql2_insert="INSERT INTO quantity(quantity)
 
 if(mysqli_query($link, $sql_insert)) {
 echo "<h3>Details added</h3><p>";
-echo "<a href='pledgeitem.php'>Move to pledge item area</a>";}
+echo "<a href='displayitems.php'>Move to pledge item area</a>";}
 else {
             echo "An error occured, try again!";
 }

@@ -10,6 +10,7 @@
 <?php include("includes/header.html");?>
 <?php include("includes/nav.html");?>
 <div id="content">
+<h3>Edit Item</h3>
 
 <?php
 $server="localhost";
